@@ -29,5 +29,8 @@ Pada perancangan kali ini terdapat 5 buah table
 4. tbtransaksi = no_transaksi*,kode_shift**, kode_toko**, tgl, total
 5. tbdetail = id_detail*, no_transaksi**, kode_barang**, qty, subtotal
 
-* = primary key
-** = foreign key
+(*) = primary key
+
+(**) = foreign key
+
+
