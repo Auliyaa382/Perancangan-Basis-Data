@@ -16,12 +16,16 @@
 -> untuk tau periode tertentu berarti setiap transaksi yang terjadi harus ada tanggalnya
 
 -> memanggil kode dengan SELECT * FROM tbtransaksi WHERE tgl between " " and " ";
+
 -> SELECT * FROM tbtransaksi WHERE tgl BETWEEN "2022-06-01 " and "2022-06-30 ";
 
 4. Aplikasi bisa mengeluarkan laporan untuk menampilkan detail transaksi yang dilakukan disetiap akhir shift
 
 -> Laporan akan keluar setiap jam 00.00, 08.00, dan 16.00
 
+-> SELECT *
+FROM tbdetail INNER JOIN tbtransaksi on tbdetail.no_transaksi = tbtransaksi.no_transaksi 
+WHERE tgl BETWEEN '2022-06-01 08:00:00' AND '2022-06-01 16:00:00';
 
 Pada perancangan kali ini terdapat 5 buah table
 1. tbbarang = kode_barang*,nama_barang,stok, satuan_brg, harga_brg
