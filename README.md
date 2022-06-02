@@ -16,6 +16,7 @@
 -> untuk tau periode tertentu berarti setiap transaksi yang terjadi harus ada tanggalnya
 
 -> memanggil kode dengan SELECT * FROM tbtransaksi WHERE tgl between " " and " ";
+-> SELECT * FROM tbtransaksi WHERE tgl BETWEEN "2022-06-01 " and "2022-06-30 ";
 
 4. Aplikasi bisa mengeluarkan laporan untuk menampilkan detail transaksi yang dilakukan disetiap akhir shift
 
